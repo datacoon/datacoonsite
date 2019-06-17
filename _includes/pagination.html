@@ -1,0 +1,27 @@
+{% if paginator.total_pages > 1 %} 
+<section class="pagination py-4">
+  <div class="container-fluid">
+    <div class="row justify-content-md-center text">
+
+          {% if paginator.previous_page %}
+          <div class="col-4 text-left">
+            <a href="{{ paginator.previous_page_path }}" class="previous">&larr;&nbsp;Назад</a>
+          </div>
+          {% else %}
+          <div class="col-4"></div>
+          {% endif %}
+          <div class="col-4 text-center">
+            <span class="page-number ">Страница {{ paginator.page }}&nbsp;из&nbsp;{{ paginator.total_pages }}</span>
+          </div>
+          {% if paginator.next_page %}
+          <div class="col-4 text-right">
+            <a href="{{ paginator.next_page_path }}" class="next">Дальше&nbsp;&rarr;</a>
+          </div>
+          {% else %}
+          <div class="col-4"></div>
+          {% endif %}
+
+    </div>
+  </div>
+</section>
+{% endif %}

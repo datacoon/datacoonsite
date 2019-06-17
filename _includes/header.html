@@ -1,0 +1,32 @@
+<div {% if page.layout == 'home' %}class="hero"{% endif %}>
+
+  <nav class="navbar navbar-expand-lg navbar-dark {% if page.layout != 'home' %}bg-blue-dark{% endif %}">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{site.baseurl}}/">
+        <img src="{{site.baseurl}}/img/logo-square-white.svg" width="48" height="48" class="d-inline-block align-middle" alt="">
+        <span class="pl-2">{{site.title}}</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        {% include menu.html %}
+      </div>
+    </div>
+  </nav>
+
+  {% if page.layout == 'home' %}
+  <div class="container pt-5 text-light">
+    <div class="row">
+      <div class="col-8">
+        <h2>{{site.slogan}}</h2>
+        <p>{{site.description}}</p>
+      </div>
+    </div>
+  </div>
+
+  <img src="{{site.baseurl}}/img/hero-bg.svg" class="img-full" alt="">
+  {% endif %}
+
+</div>

@@ -1,0 +1,135 @@
+---
+layout: default
+---
+
+  <div class="services pb-5 bg-blue-dark">
+    <div class="container pb-5">
+      <div class="row">
+        <div class="col-12 pb-4">
+          <div class="card-deck text-dark">
+            {% for card in page.about.list%}
+            <div class="card p-3">
+              <div class="card-body">
+                <h3>{{card.heading}}</h3>
+                <p class="mb-0">{{card.subheading}}</p>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <a href="{{site.baseurl}}/about/" class="btn btn-cyan btn-lg">Подробнее о нас <i class="fas fa-arrow-right pl-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="projects py-5 bg-blue-dark text-light">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 mb-4">
+          <h3><a href="{{site.baseurl}}/projects/">Наши проекты</a></h3>
+        </div>
+        <div class="col-12">
+          <div class="card-deck text-dark">
+            {% for project in site.projects limit:3 %}
+            <a href="{{site.baseurl}}{{project.url}}" class="card p-3 text-dark">
+              <div class="card-body">
+                {% if project.logo %}<img src="{{site.baseurl}}/img/{{project.logo}}" alt="{{project.title}}" class="mb-3" height="80">{% endif %}
+                <h3>{{project.title}}</h3>
+                <p class="mb-0">{{project.description}}</p>
+              </div>
+            </a>
+            {% endfor %}
+<!--             <a href="#" class="card p-3 text-dark">
+              <div class="card-body">
+                <img src="img/cs-logo.png" alt="" class="mb-3" width="80" height="80">
+                <h3>Госзатраты</h3>
+                <p class="mb-0">Здесь какой-то текст с кратким описанием. Тут что-то про компанию, здесь ещё что-то, там про данные, здесь про третье, здесь про десятое, и так далее. Ну вы поняли.</p>
+              </div>
+            </a>
+            <div class="card p-3">
+              <div class="card-body">
+                <h3>Национальный цифровой архив России</h3>
+                <p class="mb-0">Здесь какой-то текст с кратким описанием. Тут что-то про компанию, здесь ещё что-то, там про данные, здесь про третье.</p>
+              </div>
+            </div>
+            <div class="card p-3">
+              <div class="card-body">
+                <h3>Открытая Полиция</h3>
+                <p class="mb-0">Здесь какой-то текст с кратким описанием. Тут что-то про компанию, здесь ещё что-то, там про данные, здесь про третье, здесь про десятое, и так далее.</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="posts py-5 bg-blue-dark text-light">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-12 mb-4">
+          <h3><a href="{{site.baseurl}}/blog/">Статьи</a></h3>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pb-5 px-5">
+      <div class="row post-grid">
+        {% for post in site.posts limit:7 %}
+        <div class="{% if forloop.index == 1 %}post-item-featured{% else %}post-item{% endif %} mb-3">
+          <a href="{{site.baseurl}}{{post.url}}">
+            <div class="img img-ratio-photo mb-2" style="background-image: url({{site.baseurl}}/img/{{post.img}});"></div>
+            <h4>{{ post.title }}</h4>
+          </a>
+        </div>
+        {% endfor %}
+<!--         <div class="post-item-featured mb-3">
+          <a href="#">
+            <div class="img img-ratio-photo mb-2" style="background-image: url(img/test.jpg);"></div>
+            <h4>Приглашаем на пятый ежегодный День открытых данных в Москве</h4>
+          </a>
+        </div>
+        <div class="post-item mb-3">
+          <a href="#">
+            <div class="img img-ratio-photo mb-2" style="background-image: url(img/test.jpg);"></div>
+            <h4>Инфокультура подводит итоги и поздравляет с наступающим Новым 2019 годом</h4>
+          </a>
+        </div>
+        <div class="post-item mb-3">
+          <a href="#">
+            <div class="img img-ratio-photo mb-2" style="background-image: url(img/test.jpg);"></div>
+            <h4>Госзатраты: телеграм-бот для получения данных о госконтрактах</h4>
+          </a>
+        </div>
+        <div class="post-item mb-3">
+          <a href="#">
+            <div class="img img-ratio-photo mb-2" style="background-image: url(img/test.jpg);"></div>
+            <h4>Госзатраты: как получить данные о госзаказчиках в один клик?</h4>
+          </a>
+        </div>
+        <div class="post-item mb-3">
+          <a href="#">
+            <div class="img img-ratio-photo mb-2" style="background-image: url(img/test.jpg);"></div>
+            <h4>5 самых популярных лекций Инфокультуры</h4>
+          </a>
+        </div>
+        <div class="post-item mb-3">
+          <a href="#">
+            <div class="img img-ratio-photo mb-2" style="background-image: url(img/test.jpg);"></div>
+            <h4>Открытая Полиция: мультфильм «Осмотр и досмотр автомобиля»</h4>
+          </a>
+        </div>
+        <div class="post-item mb-3">
+          <a href="#">
+            <div class="img img-ratio-photo mb-2" style="background-image: url(img/test.jpg);"></div>
+            <h4>Городские данные: картографирование для лингвистов и демаркация</h4>
+          </a>
+        </div> -->
+      </div>
+    </div>
+  </div>

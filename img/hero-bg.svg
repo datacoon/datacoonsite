@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="278" viewBox="0 0 1366 278">
+  <defs>
+    <filter id="Path_11" x="-24.983" y="-17.786" width="1415.884" height="295.785" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#120b3c"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_2" x="120" y="133.295" width="72" height="72" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-2"/>
+      <feFlood flood-color="#120b3c"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_3" x="664.441" y="41.464" width="72" height="72" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-3"/>
+      <feFlood flood-color="#120b3c"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_4" x="1099.859" y="112.333" width="72" height="72" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-4"/>
+      <feFlood flood-color="#120b3c"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-hero-bg">
+      <rect width="1366" height="278"/>
+    </clipPath>
+  </defs>
+  <g id="hero-bg" clip-path="url(#clip-hero-bg)">
+    <g id="Group_3" data-name="Group 3" transform="translate(0 -323.422)">
+      <path id="Path_12" data-name="Path 12" d="M1366,420.422s-93.422,152.355-216.121,173.863S929.157,445.165,761.934,453.8,539.445,586.078,422.406,607.629,235.352,574.621,155.793,582.25,33.074,641.086,0,666.23c-.559-.074,0,32.191,0,32.191H1366Z" transform="translate(0 -97)" fill="#151a59"/>
+      <g transform="matrix(1, 0, 0, 1, 0, 323.42)" filter="url(#Path_11)">
+        <path id="Path_11-2" data-name="Path 11" d="M0,664.68c35.683-20.131,62.776-69.011,142.73-80.525s100.916,55.391,223.8,32.009S498.02,501.012,680.694,491.25s186.262,109.79,369.819,88.325S1287.128,460.21,1366,420.422" transform="translate(0 -420.42)" fill="none" stroke="#46eef8" stroke-width="4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 0, 323.42)" filter="url(#Ellipse_2)">
+        <g id="Ellipse_2-2" data-name="Ellipse 2" transform="translate(148 153.29)" fill="#110837" stroke="#46eef8" stroke-width="4">
+          <circle cx="8" cy="8" r="8" stroke="none"/>
+          <circle cx="8" cy="8" r="10" fill="none"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 0, 323.42)" filter="url(#Ellipse_3)">
+        <g id="Ellipse_3-2" data-name="Ellipse 3" transform="translate(692.44 61.46)" fill="#110837" stroke="#46eef8" stroke-width="4">
+          <circle cx="8" cy="8" r="8" stroke="none"/>
+          <circle cx="8" cy="8" r="10" fill="none"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 0, 323.42)" filter="url(#Ellipse_4)">
+        <g id="Ellipse_4-2" data-name="Ellipse 4" transform="translate(1127.86 132.33)" fill="#110837" stroke="#46eef8" stroke-width="4">
+          <circle cx="8" cy="8" r="8" stroke="none"/>
+          <circle cx="8" cy="8" r="10" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
