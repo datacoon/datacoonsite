@@ -62,7 +62,7 @@ layout: default
   </div>
 
 
-
+  {% if paginator.posts %}
   <div class="posts py-5 bg-blue-dark text-light">
     <div class="container pt-5">
       <div class="row">
@@ -72,6 +72,7 @@ layout: default
       </div>
     </div>
     <div class="container-fluid pb-5 px-5">
+      
       <div class="row post-grid">
         {% for post in site.posts limit:7 %}
         <div class="{% if forloop.index == 1 %}post-item-featured{% else %}post-item{% endif %} mb-3">
@@ -124,5 +125,7 @@ layout: default
           </a>
         </div> -->
       </div>
+      
     </div>
   </div>
+  {% endif %}
