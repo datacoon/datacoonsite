@@ -10,13 +10,18 @@ html{
 	-webkit-font-smoothing: antialiased;
 }
 
-a {
+a,
+.underline {
 	border-bottom: 1px solid $gray-500;
 	transition: all .15s ease-in-out;
 
   @include hover {
     color: $link-hover-color;
-    border-bottom-color: $primary;
+    border-bottom-color: $cyan;
+  }
+
+  &.underline-none{
+    border-bottom: none;
   }
 }
 .bg-dark,
@@ -183,3 +188,50 @@ html.signin{
   padding: 15px;
   margin: auto;
 }
+
+
+// .filter{
+//   // filter: sepia(100%) hue-rotate(190deg) brightness(50%) saturate(200%);
+//   // -webkit-filter: sepia(100%) hue-rotate(190deg) brightness(50%) saturate(200%);
+//   // -moz-filter: sepia(100%) hue-rotate(190deg) brightness(50%) saturate(200%);
+//   // -ms-filter: sepia(100%) hue-rotate(190deg) brightness(50%) saturate(200%);
+//   // -o-filter: sepia(100%) hue-rotate(190deg) brightness(50%) saturate(200%);
+//   // -webkit-filter: sepia(100%) hue-rotate(190deg) brightness(50%) saturate(200%);
+//   filter: saturate(0);
+//   -webkit-filter: saturate(0);
+//   -moz-filter: saturate(0);
+//   -ms-filter: saturate(0);
+//   -o-filter: saturate(0);
+//   -webkit-filter: saturate(0);
+
+//     &:hover{
+//       filter: none;
+//       -webkit-filter: none;
+//       -moz-filter: none;
+//       -ms-filter: none;
+//       -o-filter: none;
+//       -webkit-filter: none;
+//     }
+// }
+
+// a.card{
+//   .filtered {
+//     background: $blue-dark;
+//     position: relative;
+//     display: block;
+//     margin: 0;
+//     padding: 0;
+//     img {
+//       mix-blend-mode: luminosity;
+//     }
+//   }
+
+//   &:hover{
+//     .filtered{
+//       background: none;
+//       img{
+//         mix-blend-mode: normal;
+//       }
+//     }
+//   }
+// }

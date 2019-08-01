@@ -16,6 +16,7 @@ $black:			   	#141414 !default;
 $blue:    			#245BD2 !default;
 $blue-dark:    		#151A59 !default;
 $red:    			#FF5A50 !default;
+$pink:    			#e83e8c !default;
 $green:    			#32B400 !default;
 $yellow:    		#FFB400 !default;
 $secondary:    		#F2F8FC !default;
@@ -48,7 +49,8 @@ $body-color:        $white !default;
 
 // Links
 
-$link-color:                              $cyan !default;
+$link-color:                              $white !default;
+$link-hover-color:						  $cyan !default;
 $link-hover-decoration:                   none !default;
 
 
@@ -129,6 +131,12 @@ $navbar-dark-brand-hover-color: 	$cyan !default;
 $navbar-dark-color:                	$white !default;
 $navbar-dark-hover-color:          	$cyan !default;
 $navbar-dark-active-color:          $cyan !default;
+
+
+
+// Code
+
+$pre-color:                         $pink !default;
 
 
 

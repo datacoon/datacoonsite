@@ -9,27 +9,3 @@ title: Статьи
 
 
 
-<!--   <div class="col-8 mb-4">
-    <p>Здесь какой-то текст с кратким описанием. Тут что-то про компанию, здесь ещё что-то, там про данные, здесь про третье, здесь про десятое, и так далее. Ну вы поняли.</p>
-  </div> -->
-
-  {% if paginator.posts %}
-  <div class="row post-grid">
-    {% for post in paginator.posts %}
-    <div class="{% if forloop.index == 1 %}post-item-featured{% else %}post-item{% endif %} mb-3">
-      <a href="{{site.baseurl}}{{post.url}}">
-        <div class="img img-ratio-photo mb-2" style="background-image: url({{site.baseurl}}/img/{{post.img}});"></div>
-        <h4>{{ post.title }}</h4>
-      </a>
-    </div>
-    {% endfor %}
-  </div>
-  {% else %}
-  <div class="col-8">Статей пока нет</div>
-  {% endif %}
-
-
-  {% include pagination.html %}
-
-
-

@@ -27,41 +27,34 @@ layout: default
 
 
   <div class="projects py-5 bg-blue-dark text-light">
-    <div class="container py-5">
+    <div class="container pt-5">
       <div class="row">
         <div class="col-12 mb-4">
           <h3><a href="{{site.baseurl}}/projects/">Наши проекты</a></h3>
         </div>
+      </div>
+    </div>
+    <div class="container pb-5">
+      <!-- <div class="row px-3"> -->
+      <div class="row">
         <div class="col-12">
-          <div class="card-deck text-dark">
+          <div class="card-columns text-dark">
             {% for project in site.projects limit:3 %}
-            <a href="{{site.baseurl}}{{project.url}}" class="card p-3 text-dark">
+<!--             <a href="{{site.baseurl}}{{project.url}}" class="card p-3 text-dark">
               <div class="card-body">
                 {% if project.logo %}<img src="{{site.baseurl}}/img/{{project.logo}}" alt="{{project.title}}" class="mb-3" height="80">{% endif %}
                 <h3>{{project.title}}</h3>
                 <p class="mb-0">{{project.description}}</p>
               </div>
+            </a> -->
+            <a href="{{site.baseurl}}{{project.url}}" class="card p-0 bg-transparent filter">
+              <div class="card-body p-0">
+                {% if project.logo %}<img src="{{site.baseurl}}/img/{{project.logo}}" alt="{{project.title}}" class="mb-3 mw-100">{% endif %}
+                <h3>{{project.title}}</h3>
+                <!-- <p class="mb-0">{{project.description}}</p> -->
+              </div>
             </a>
             {% endfor %}
-<!--             <a href="#" class="card p-3 text-dark">
-              <div class="card-body">
-                <img src="img/cs-logo.png" alt="" class="mb-3" width="80" height="80">
-                <h3>Госзатраты</h3>
-                <p class="mb-0">Здесь какой-то текст с кратким описанием. Тут что-то про компанию, здесь ещё что-то, там про данные, здесь про третье, здесь про десятое, и так далее. Ну вы поняли.</p>
-              </div>
-            </a>
-            <div class="card p-3">
-              <div class="card-body">
-                <h3>Национальный цифровой архив России</h3>
-                <p class="mb-0">Здесь какой-то текст с кратким описанием. Тут что-то про компанию, здесь ещё что-то, там про данные, здесь про третье.</p>
-              </div>
-            </div>
-            <div class="card p-3">
-              <div class="card-body">
-                <h3>Открытая Полиция</h3>
-                <p class="mb-0">Здесь какой-то текст с кратким описанием. Тут что-то про компанию, здесь ещё что-то, там про данные, здесь про третье, здесь про десятое, и так далее.</p>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>

@@ -136,11 +136,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #46EEF8;
+  color: #fff;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #09dce9;
+    color: #46EEF8;
     text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
@@ -439,7 +439,7 @@ kbd {
 pre {
   display: block;
   font-size: 87.5%;
-  color: #212529; }
+  color: #e83e8c; }
   pre code {
     font-size: inherit;
     color: inherit;
@@ -2432,10 +2432,10 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #46EEF8;
+  color: #fff;
   text-decoration: none; }
   .btn-link:hover {
-    color: #09dce9;
+    color: #46EEF8;
     text-decoration: none; }
   .btn-link:focus, .btn-link.focus {
     text-decoration: none;
@@ -3726,12 +3726,12 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: 0;
   line-height: 1.25;
-  color: #46EEF8;
+  color: #fff;
   background-color: #fff;
   border: 0 solid #dee2e6; }
   .page-link:hover {
     z-index: 2;
-    color: #09dce9;
+    color: #46EEF8;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6; }
@@ -8115,12 +8115,17 @@ a.text-cyan:hover, a.text-cyan:focus {
 html {
   -webkit-font-smoothing: antialiased; }
 
-a {
+a,
+.underline {
   border-bottom: 1px solid #adb5bd;
   transition: all .15s ease-in-out; }
-  a:hover {
-    color: #09dce9;
-    border-bottom-color: #245BD2; }
+  a:hover,
+  .underline:hover {
+    color: #46EEF8;
+    border-bottom-color: #46EEF8; }
+  a.underline-none,
+  .underline.underline-none {
+    border-bottom: none; }
 
 .bg-dark a,
 .bg-blue a,
