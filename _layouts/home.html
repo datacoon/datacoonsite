@@ -5,20 +5,52 @@ layout: default
   <div class="services pb-5 bg-blue-dark">
     <div class="container pb-5">
       <div class="row">
+        <div class="col-12 mb-4">
+          <h3>Что мы делаем</h3>
+        </div>
         <div class="col-12 pb-4">
-          <div class="card-deck text-dark">
+          <div class="row">
             {% for card in page.about.list%}
-            <div class="card p-3">
-              <div class="card-body">
-                <h3>{{card.heading}}</h3>
-                <p class="mb-0">{{card.subheading}}</p>
+            <div class="col-12 col-sm-6 col-lg-4 pb-4">
+              <div class="card text-black h-100">
+                <div class="card-body">
+                  <h3>{{card.heading}}</h3>
+                  {% if card.subheading %}<p class="mb-0">{{card.subheading}}</p>{% endif %}
+                </div>
               </div>
             </div>
             {% endfor %}
           </div>
+<!--           <div class="card-deck text-dark">
+            {% for card in page.about.list%}
+            <div class="card p-3">
+              <div class="card-body">
+                <h3>{{card.heading}}</h3>
+                 {% if card.subheading %}<p class="mb-0">{{card.subheading}}</p>{% endif %}
+              </div>
+            </div>
+            {% endfor %}
+          </div> -->
         </div>
         <div class="col-12 text-center">
           <a href="{{site.baseurl}}/about/" class="btn btn-cyan btn-lg">Подробнее о нас <i class="fas fa-arrow-right pl-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="services pb-5 bg-blue-dark">
+    <div class="container pb-5">
+      <div class="row">
+        <div class="col-12 mb-4">
+          <h3>Технологии</h3>
+        </div>
+        <div class="col-12 pb-4">
+          <h4><code>Python, Django, Django CMS, Flask, CKAN</code></h4>
+          <h4><code>HTML5, CSS3, Jekyll, D3.js, jQuery, Vue.js</code></h4>
+          <h4><code>Git, Sass, Jade</code></h4>
         </div>
       </div>
     </div>

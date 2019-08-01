@@ -20,8 +20,8 @@
   <div class="container pt-5 text-light">
     <div class="row">
       <div class="col-8">
-        <h2>{{site.slogan}}</h2>
-        <p>{{site.description}}</p>
+        {% if site.slogan %}<h2>{{site.slogan}}</h2>{% endif %}
+        {% if site.description %}<p>{{site.description}}</p>{% endif %}
       </div>
     </div>
   </div>

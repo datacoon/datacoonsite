@@ -59,6 +59,10 @@ a,
   padding-top: 56.25%;
 }
 
+.equal{
+  background-clip: content-box;
+}
+
 .hero{
   background-image: linear-gradient(to right, $blue , $blue-dark);
 }
