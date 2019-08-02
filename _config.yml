@@ -20,7 +20,7 @@ slogan: Занимаемся разработкой системных&nbsp;ре
 #   Тут что-то про компанию, здесь ещё что-то, там про данные, 
 #   здесь про третье, здесь про десятое, и так далее. Ну вы поняли.
 baseurl: "https://datacoon.io" # the subpath of your site, e.g. /blog
-baseurl: "" # the subpath of your site, e.g. /blog
+# baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 email: hello@datacoon.io
