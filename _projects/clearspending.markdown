@@ -2,27 +2,33 @@
 layout: page
 
 title:  Госзатраты
-description: Здесь какой-то текст с кратким описанием. Тут что-то про компанию, здесь ещё что-то, там про данные, здесь про третье, здесь про десятое, и так далее. Ну вы поняли.
+link: https://clearspending.ru
+
 logo: cs-logo.png
-date:   2019-06-14 11:23:26 +0300
+screenshot: cs-preview.png
+
+date: 2019-08-01 11:23:26 +0300
+position: 1
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+2014 – по н.в.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Cайт проекта «Госзатраты», на котором публикуются закупки, контракты, данные о поставщиках и заказчиках, доступны ежедневные дампы базы данных и ссылки на API). Имеет раздел sub.clearspending.ru — спецпроект «Субсидии», содержащий данные о субсидиях из федерального бюджета, распределителях и получателях.
 
-Jekyll also offers powerful support for code snippets:
+![page.title]({{site.baseurl}}/uploads/{{page.screenshot}})
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+#### Технологии
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Python, Django, Django CMS, d3js
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+#### Сервисы
+
+- телеграм-бот @csParticipantStatsBot — делится статистикой госзаказа организации по ИНН;
+- телегам-бот @csDownloaderBot — формирует выборку контрактов по необходимым вам фильтрам;
+- телеграм-канал @clearspending — каждый день присылает три самых крупных контракта по отраслям и оповещает, если в базе появляются очень крупные контракты;
+- [расширение для браузера Google Chrome](http://bit.ly/clearspending_ext) — позволяет по сайту организации просматривать статистику ее участия в госзаказе.
+
+
+<div class="text-center py-5">
+	<a href="{{page.link}}" target="_blank" class="btn btn-cyan btn-lg">Перейти на сайт «{{page.title}}» <i class="fas fa-arrow-right pl-2"></i></a>
+</div>

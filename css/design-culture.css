@@ -8141,6 +8141,9 @@ a,
 .bg-blue-dark {
   background-color: #151A59; }
 
+img {
+  max-width: 100%; }
+
 .img-full {
   width: 100%;
   height: auto; }
@@ -8211,6 +8214,10 @@ a,
 .post-item h4 {
   font-size: 0.875rem; }
 
+.page img {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
 footer .navbar .navbar-nav {
   flex-direction: initial; }
   footer .navbar .navbar-nav .nav-item .nav-link {
@@ -8231,22 +8238,5 @@ footer .copy a {
   footer .copy a:hover {
     color: white;
     border-bottom-color: white; }
-
-/* LOGIN */
-html.signin {
-  height: 100%; }
-  html.signin body {
-    height: 100%;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px; }
-
-.form-signin {
-  width: 100%;
-  max-width: 400px;
-  padding: 15px;
-  margin: auto; }
 
 /*# sourceMappingURL=design-culture.css.map */

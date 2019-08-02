@@ -3,7 +3,7 @@ layout: default
 ---
 
   <div class="services pb-5 bg-blue-dark">
-    <div class="container pb-5">
+    <div class="container">
       <div class="row">
         <div class="col-12 mb-4">
           <h3>Что мы делаем</h3>
@@ -32,9 +32,7 @@ layout: default
             {% endfor %}
           </div> -->
         </div>
-        <div class="col-12 text-center">
-          <a href="{{site.baseurl}}/about/" class="btn btn-cyan btn-lg">Подробнее о нас <i class="fas fa-arrow-right pl-2"></i></a>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -42,7 +40,7 @@ layout: default
 
 
   <div class="services pb-5 bg-blue-dark">
-    <div class="container pb-5">
+    <div class="container">
       <div class="row">
         <div class="col-12 mb-4">
           <h3>Технологии</h3>
@@ -52,12 +50,15 @@ layout: default
           <h4><code>HTML5, CSS3, Jekyll, D3.js, jQuery, Vue.js</code></h4>
           <h4><code>Git, Sass, Jade</code></h4>
         </div>
+        <div class="col-12 text-center">
+          <a href="{{site.baseurl}}/about/" class="btn btn-cyan btn-lg">Подробнее о нас <i class="fas fa-arrow-right pl-2"></i></a>
+        </div>
       </div>
     </div>
   </div>
 
 
-
+  {% if site.projects == "false" %}
   <div class="projects py-5 bg-blue-dark text-light">
     <div class="container pt-5">
       <div class="row">
@@ -81,7 +82,7 @@ layout: default
             </a> -->
             <a href="{{site.baseurl}}{{project.url}}" class="card p-0 bg-transparent filter">
               <div class="card-body p-0">
-                {% if project.logo %}<img src="{{site.baseurl}}/img/{{project.logo}}" alt="{{project.title}}" class="mb-3 mw-100">{% endif %}
+                {% if project.logo %}<img src="{{site.baseurl}}/uploads/{{project.logo}}" alt="{{project.title}}" class="mb-3 mw-100">{% endif %}
                 <h3>{{project.title}}</h3>
                 <!-- <p class="mb-0">{{project.description}}</p> -->
               </div>
@@ -92,6 +93,7 @@ layout: default
       </div>
     </div>
   </div>
+  {% endif %}
 
 
   {% if paginator.posts %}
@@ -161,3 +163,44 @@ layout: default
     </div>
   </div>
   {% endif %}
+
+
+
+    <div class="projects py-5 bg-blue-dark text-light">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <h3>Наши партнёры</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container pb-5">
+        <div class="row d-flex align-items-center">
+
+          <div class="col-12 col-sm-6 col-lg-4 mb-5">
+            <div class="h-100">
+              <a href="https://komitetgi.ru/" target="_blank" class="d-block underline-none text-md-center">
+                <img src="{{site.baseurl}}/img/kgi-logo-white.png" class="mw-100" alt="КГИ">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4 mb-5">
+            <div class="h-100">
+              <a href="https://www.infoculture.ru/" target="_blank" class="d-block underline-none text-md-center">
+                <img src="{{site.baseurl}}/img/ik-logo-ver-white.png" alt="Инфокультура" style="max-width:240px;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4 mb-5">
+            <div class="h-100">
+              <a href="http://aurd.ru/" target="_blank" class="d-block underline-none text-md-center">
+                <img src="{{site.baseurl}}/img/aurd-logo-white.png" alt="АУРД" style="max-width:180px;">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
