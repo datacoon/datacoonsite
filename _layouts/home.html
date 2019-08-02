@@ -46,7 +46,7 @@ layout: default
           <h3>Технологии</h3>
         </div>
         <div class="col-12 pb-4">
-          <h4><code>Python, Django, Django CMS, Flask, CKAN</code></h4>
+          <h4><code>Python, Django, Django CMS, Flask, CKAN, RESTful API, MongoDB</code></h4>
           <h4><code>HTML5, CSS3, Jekyll, D3.js, jQuery, Vue.js</code></h4>
           <h4><code>Git, Sass, Jade</code></h4>
         </div>
@@ -179,7 +179,7 @@ layout: default
 
           <div class="col-12 col-sm-6 col-lg-4 mb-5">
             <div class="h-100">
-              <a href="https://komitetgi.ru/" target="_blank" class="d-block underline-none text-md-center">
+              <a href="https://komitetgi.ru/" target="_blank" class="d-block underline-none text-md-center opacity">
                 <img src="{{site.baseurl}}/img/kgi-logo-white.png" class="mw-100" alt="КГИ">
               </a>
             </div>
@@ -187,7 +187,7 @@ layout: default
 
           <div class="col-12 col-sm-6 col-lg-4 mb-5">
             <div class="h-100">
-              <a href="https://www.infoculture.ru/" target="_blank" class="d-block underline-none text-md-center">
+              <a href="https://www.infoculture.ru/" target="_blank" class="d-block underline-none text-md-center opacity">
                 <img src="{{site.baseurl}}/img/ik-logo-ver-white.png" alt="Инфокультура" style="max-width:240px;">
               </a>
             </div>
@@ -195,7 +195,7 @@ layout: default
 
           <div class="col-12 col-sm-6 col-lg-4 mb-5">
             <div class="h-100">
-              <a href="http://aurd.ru/" target="_blank" class="d-block underline-none text-md-center">
+              <a href="http://aurd.ru/" target="_blank" class="d-block underline-none text-md-center opacity">
                 <img src="{{site.baseurl}}/img/aurd-logo-white.png" alt="АУРД" style="max-width:180px;">
               </a>
             </div>
@@ -204,3 +204,26 @@ layout: default
         </div>
       </div>
     </div>
+
+
+
+    <div class="projects py-5 bg-blue-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <h3>Контакты</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-8 mb-4">
+            {% if site.address %}<p>{{site.address}}</p>{% endif %}
+            {% if site.email %}<p class="mb-4"><a href="mailto:{{site.email}}">{{site.email}}</a></p>{% endif %}
+            {% if site.phone %}<h4>{{site.phone}}</h4>{% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+

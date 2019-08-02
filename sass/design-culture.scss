@@ -183,5 +183,36 @@ footer{
   }
 }
 
+.opacity{
+  opacity: .5;
+  transition: all .15s ease-in-out;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.proj-hover{
+  .wrapper{
+    position: relative;
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $blue;
+      opacity: .25;
+      transition: all .15s ease-in-out;
+    }
+  }
+  &:hover{
+    .wrapper{
+      .overlay{
+        opacity: 0;
+      }
+    }
+  }
+}
+
 
 

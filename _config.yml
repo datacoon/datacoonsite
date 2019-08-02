@@ -14,15 +14,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: DataCoon
-email: your-email@example.com
 slogan: Занимаемся разработкой системных&nbsp;решений на&nbsp;основе&nbsp;данных
 # description: >- # this means to ignore newlines until "baseurl:"
 #   Здесь какой-то текст с кратким описанием. 
 #   Тут что-то про компанию, здесь ещё что-то, там про данные, 
 #   здесь про третье, здесь про десятое, и так далее. Ну вы поняли.
 baseurl: "https://datacoon.io" # the subpath of your site, e.g. /blog
-# baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+email: hello@datacoon.io
+address: Москва, Малый Кисельный переулок, дом 1/9, офис 402
+phone: +7&nbsp;499&nbsp;500-96-58
+
 twitter_username: ""
 github_username:  ""
 
