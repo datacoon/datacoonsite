@@ -29,9 +29,9 @@ about:
     <div class="row">
       {% for card in page.about.list%}
       <div class="col-12 col-sm-6 col-lg-4 pb-4">
-        <div class="card text-black h-100">
+        <div class="card h-100 bg-blue">
           <div class="card-body">
-            <h3>{{card.heading}}</h3>
+            <h4>{{card.heading}}</h4>
             {% if card.subheading %}<p class="mb-0">{{card.subheading}}</p>{% endif %}
           </div>
         </div>
